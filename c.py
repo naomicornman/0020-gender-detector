@@ -12,9 +12,10 @@ for fname in glob(join(DATA_DIR, '*.txt')):
         for line in open(fname, 'r'):
             name, gender, babies = line.split(',')
             tally[gender].add(name)
+       
 
-print("F:", str(totalsdict['F']).rjust(5),
-	"M:", str(totalsdict['M']).rjust(5))
+print("F:", len(tally['F']), 
+	"M:", len(tally['M']))
 
-f_to_m_ratio = round(100 * totalsdict['F'] / totalsdict['M'])
+f_to_m_ratio = round(100 * len(tally['F']) / len(tally['M']))
 print("F/M baby ratio:", f_to_m_ratio)
