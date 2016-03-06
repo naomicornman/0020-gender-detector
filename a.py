@@ -23,4 +23,3 @@ unpack_archive(DATA_ZIP_PATH, extract_dir=DATA_DIR)
 # get all the filenames
 babynamefilenames = glob(join(DATA_DIR, '*.txt'))
 print("There are", len(babynamefilenames), 'txt files')
-
