@@ -61,5 +61,3 @@ print('females:', babycount['females'], 'males:', babycount['males'])
 #         print (r['name'],r['gender'],r['ratio'])
 #     if r['name'] == "ZZZblahblah": 
 #         print (r['name'],r['gender'],r['ratio'])
-
-
